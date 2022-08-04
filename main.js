@@ -94,5 +94,8 @@ console.log(sumEvens(strNumb));
 
   //find the id of the object in weather that has a min_temp of 15.915
 
-  const idealTemp = 
-  console.log(idealTemp);
+  const idealTemp = weather.find(number => {
+    return number.min_temp === 15.915
+  })
+
+  console.log(idealTemp.id);
