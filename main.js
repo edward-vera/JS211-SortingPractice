@@ -17,7 +17,8 @@
 }
 console.log(sumEvens(strNumb));
   // Find the index of the first value when added to it's index = 512 (#ATX!!)
-  const atxIdx;
+  const atxIdx = pieNumb.findIndex((num : number, index : number) => num + index === 512 );
+
 
   console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
 
@@ -96,6 +97,6 @@ console.log(sumEvens(strNumb));
 
   const idealTemp = weather.find(number => {
     return number.min_temp === 15.915
-  })
+  }).id
 
-  console.log(idealTemp.id);
+  console.log(idealTemp);
